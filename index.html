@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swing Dance Vegas</title>
+  <meta name="description" content="Classes, socials, and events for the Swing Dance Vegas community." />
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Swing Dance Vegas" />
+  <meta property="og:description" content="Classes, socials, and events for the Swing Dance Vegas community." />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="Swing Dance Vegas" class="logo" />
+        <span class="brand-text">Swing Dance Vegas</span>
+      </a>
+      <nav class="nav">
+        <a href="#events">Events</a>
+        <a href="#classes">Classes</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button small" href="#join">Join</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Vegas swings. You’re invited.</h1>
+          <p class="lead">
+            Weekly socials, beginner-friendly classes, workshops, and all the ways to get connected
+            with the Swing Dance Vegas community.
+          </p>
+          <div class="cta-row" id="join">
+            <a class="button" href="https://example.com" id="primaryCta" target="_blank" rel="noopener">Join the community</a>
+            <a class="button ghost" href="#events">See events</a>
+          </div>
+          <p class="fineprint">New? Come as you are. No partner needed.</p>
+        </div>
+
+        <div class="card hero-card">
+          <h2>Next up</h2>
+          <div id="nextEvent" class="next-event">
+            <p class="muted">Loading…</p>
+          </div>
+          <hr />
+          <div class="social-row">
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.meetup.com/" target="_blank" rel="noopener">Meetup</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Events</h2>
+          <p class="muted">A few highlights—check the calendar for the full list.</p>
+        </div>
+
+        <div class="grid" id="eventsGrid">
+          <!-- Cards are rendered by script.js -->
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Want everything in one place?</h3>
+            <p class="muted">Subscribe to our calendar so you never miss a social.</p>
+          </div>
+          <a class="button small" href="#calendar">View calendar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Calendar</h2>
+          <p class="muted">Optional: embed Google Calendar here (instructions in README).</p>
+        </div>
+
+        <div class="embed">
+          <div class="embed-placeholder">
+            <p class="muted">
+              Paste your Google Calendar embed iframe into <code>index.html</code> to show it here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Classes</h2>
+          <p class="muted">Beginner-friendly and welcoming.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Intro to Swing</h3>
+            <p>Learn the fundamentals (rhythm, connection, and basic patterns). No partner needed.</p>
+            <ul>
+              <li>Beginner-friendly</li>
+              <li>Great before socials</li>
+              <li>Drop-in or series</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Progressive Tracks</h3>
+            <p>Level up with Lindy Hop, Charleston, and musicality—plus workshops with visiting instructors.</p>
+            <ul>
+              <li>Skill-based levels</li>
+              <li>Workshops & intensives</li>
+              <li>Performance teams (optional)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Community</h2>
+          <p class="muted">How we keep it fun, safe, and inclusive.</p>
+        </div>
+
+        <div class="grid three">
+          <div class="card">
+            <h3>Code of Conduct</h3>
+            <p>We prioritize consent, respect, and a welcoming environment for everyone.</p>
+            <a href="code-of-conduct.html">Read more →</a>
+          </div>
+          <div class="card">
+            <h3>Volunteer</h3>
+            <p>Help with check-in, music, set-up, or hosting—and get to know people fast.</p>
+            <a href="#contact">Get involved →</a>
+          </div>
+          <div class="card">
+            <h3>DJ & Band Nights</h3>
+            <p>We love live music and great DJs. Want to play? Let us know.</p>
+            <a href="#contact">Reach out →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Questions, partnerships, or venue ideas? Send a note.</p>
+        </div>
+
+        <div class="card">
+          <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="row">
+              <label>
+                Name
+                <input name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button" type="submit">Send</button>
+            <p class="fineprint muted">
+              Replace the Formspree URL with your own (or remove the form and use a mailto link).
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Swing Dance Vegas</p>
+        <div class="footer-links">
+          <a href="#events">Events</a>
+          <a href="#classes">Classes</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
