@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Welcome to the new Swing Dance Vegas website",
+    "meta": "Pinned",
+    "body": "We’ll post schedule updates, special events, and announcements here.",
+    "url": "announcements.html"
+  },
+  {
+    "title": "Friday night: beginner lesson + social dancing",
+    "meta": "Weekly update",
+    "body": "Arrive early, bring comfy shoes, and get ready to meet friendly dancers.",
+    "url": "events.html#friday"
+  }
+]
