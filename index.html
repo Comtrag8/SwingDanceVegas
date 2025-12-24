@@ -7,25 +7,23 @@
   <meta name="description" content="Classes, socials, and events for the Swing Dance Vegas community." />
   <link rel="icon" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
-  <meta property="og:title" content="Swing Dance Vegas" />
-  <meta property="og:description" content="Classes, socials, and events for the Swing Dance Vegas community." />
-  <meta property="og:type" content="website" />
 </head>
-
 <body>
-  <header class="site-header">
+  <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <img src="assets/logo.svg" alt="Swing Dance Vegas" class="logo" />
-        <span class="brand-text">Swing Dance Vegas</span>
+      <a class="brand" href="index.html">
+        <img class="logo" src="assets/logo.svg" alt="Swing Dance Vegas" />
+        <strong id="brandName">Swing Dance Vegas</strong>
       </a>
       <nav class="nav">
-        <a href="#events">Events</a>
-        <a href="#classes">Classes</a>
-        <a href="#community">Community</a>
-        <a href="#contact">Contact</a>
+        <a href="announcements.html">Hot News</a>
+        <a href="events.html">Dance</a>
+        <a href="learn.html">Learn</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <a class="button small" href="#join">Join</a>
+      <a class="button small" id="ctaPrimary" href="#">Join / Register</a>
     </div>
   </header>
 
@@ -33,156 +31,98 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1>Vegas swings. You’re invited.</h1>
-          <p class="lead">
-            Weekly socials, beginner-friendly classes, workshops, and all the ways to get connected
-            with the Swing Dance Vegas community.
-          </p>
-          <div class="cta-row" id="join">
-            <a class="button" href="https://example.com" id="primaryCta" target="_blank" rel="noopener">Join the community</a>
-            <a class="button ghost" href="#events">See events</a>
+          <h1>Vintage swing, Vegas energy.</h1>
+          <p class="lead" id="tagline"></p>
+          <div class="cta-row">
+            <a class="button" id="ctaPrimary" href="#">Join / Register</a>
+            <a class="button ghost" href="calendar.html">View calendar</a>
           </div>
-          <p class="fineprint">New? Come as you are. No partner needed.</p>
+          <p class="fine">New? No partner needed. Beginner-friendly every week.</p>
         </div>
 
-        <div class="card hero-card">
-          <h2>Next up</h2>
-          <div id="nextEvent" class="next-event">
-            <p class="muted">Loading…</p>
-          </div>
-          <hr />
-          <div class="social-row">
-            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://www.meetup.com/" target="_blank" rel="noopener">Meetup</a>
-          </div>
+        <div class="card" id="weeklyAnchor">
+          <!-- Rendered by app.js -->
         </div>
       </div>
     </section>
 
-    <section id="events" class="section">
+    <section class="section">
       <div class="container">
-        <div class="section-head">
-          <h2>Events</h2>
-          <p class="muted">A few highlights—check the calendar for the full list.</p>
-        </div>
-
-        <div class="grid" id="eventsGrid">
-          <!-- Cards are rendered by script.js -->
-        </div>
-
-        <div class="callout">
-          <div>
-            <h3>Want everything in one place?</h3>
-            <p class="muted">Subscribe to our calendar so you never miss a social.</p>
-          </div>
-          <a class="button small" href="#calendar">View calendar</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="calendar" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Calendar</h2>
-          <p class="muted">Optional: embed Google Calendar here (instructions in README).</p>
-        </div>
-
-        <div class="embed">
-          <div class="embed-placeholder">
-            <p class="muted">
-              Paste your Google Calendar embed iframe into <code>index.html</code> to show it here.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="classes" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Classes</h2>
-          <p class="muted">Beginner-friendly and welcoming.</p>
-        </div>
-
         <div class="grid two">
-          <div class="card">
-            <h3>Intro to Swing</h3>
-            <p>Learn the fundamentals (rhythm, connection, and basic patterns). No partner needed.</p>
-            <ul>
-              <li>Beginner-friendly</li>
-              <li>Great before socials</li>
-              <li>Drop-in or series</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Progressive Tracks</h3>
-            <p>Level up with Lindy Hop, Charleston, and musicality—plus workshops with visiting instructors.</p>
-            <ul>
-              <li>Skill-based levels</li>
-              <li>Workshops & intensives</li>
-              <li>Performance teams (optional)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="community" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Community</h2>
-          <p class="muted">How we keep it fun, safe, and inclusive.</p>
-        </div>
-
-        <div class="grid three">
-          <div class="card">
-            <h3>Code of Conduct</h3>
-            <p>We prioritize consent, respect, and a welcoming environment for everyone.</p>
-            <a href="code-of-conduct.html">Read more →</a>
-          </div>
-          <div class="card">
-            <h3>Volunteer</h3>
-            <p>Help with check-in, music, set-up, or hosting—and get to know people fast.</p>
-            <a href="#contact">Get involved →</a>
-          </div>
-          <div class="card">
-            <h3>DJ & Band Nights</h3>
-            <p>We love live music and great DJs. Want to play? Let us know.</p>
-            <a href="#contact">Reach out →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Questions, partnerships, or venue ideas? Send a note.</p>
-        </div>
-
-        <div class="card">
-          <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="row">
-              <label>
-                Name
-                <input name="name" autocomplete="name" required />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
+          <div class="tile">
+            <span class="pill"><span class="dot"></span> Dance</span>
+            <h3 style="margin:12px 0 6px">Weekly socials + special events</h3>
+            <p>Find your next night out — lessons, socials, and workshops.</p>
+            <div class="item-actions">
+              <a class="button small" href="events.html">See events</a>
+              <a class="button small ghost" href="calendar.html">Calendar</a>
             </div>
-            <label>
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-            <button class="button" type="submit">Send</button>
-            <p class="fineprint muted">
-              Replace the Formspree URL with your own (or remove the form and use a mailto link).
-            </p>
-          </form>
+          </div>
+
+          <div class="tile">
+            <span class="pill"><span class="dot"></span> Learn</span>
+            <h3 style="margin:12px 0 6px">Start from zero (or level up)</h3>
+            <p>Beginner drop-ins, series classes, and skill-based tracks.</p>
+            <div class="item-actions">
+              <a class="button small" href="learn.html">How classes work</a>
+              <a class="button small ghost" href="faq.html">FAQ</a>
+            </div>
+          </div>
+
+          <div class="tile">
+            <span class="pill"><span class="dot"></span> Get Involved</span>
+            <h3 style="margin:12px 0 6px">Volunteer, help host, grow the scene</h3>
+            <p>Meet people fast by helping with check-in, music, or welcoming.</p>
+            <div class="item-actions">
+              <a class="button small" href="get-involved.html">Get involved</a>
+              <a class="button small ghost" href="code-of-conduct.html">Code of Conduct</a>
+            </div>
+          </div>
+
+          <div class="tile">
+            <span class="pill"><span class="dot"></span> Around Vegas</span>
+            <h3 style="margin:12px 0 6px">Other swing in town</h3>
+            <p>Community listings so dancers can find everything Vegas offers.</p>
+            <div class="item-actions">
+              <a class="button small" href="around.html">Around Vegas</a>
+              <a class="button small ghost" href="contact.html">Add an event</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container split">
+        <div>
+          <div class="section-head">
+            <h2>Announcements</h2>
+            <p class="muted">Updates, reminders, and special event news.</p>
+          </div>
+          <div id="announcementsPreview" class="list"></div>
+          <div class="item-actions" style="margin-top:14px">
+            <a class="button small" href="announcements.html">All announcements</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-head">
+            <h2>Upcoming events</h2>
+            <p class="muted">A few highlights — full list on the events page.</p>
+          </div>
+          <div id="eventsPreview" class="list"></div>
+          <div class="item-actions" style="margin-top:14px">
+            <a class="button small" href="events.html">All events</a>
+            <a class="button small ghost" href="calendar.html">Full calendar</a>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 style="margin:0 0 8px">Follow us</h3>
+            <div class="item-actions">
+              <a class="button small ghost" id="igLink" href="#" target="_blank" rel="noopener">Instagram</a>
+              <a class="button small ghost" id="fbLink" href="#" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -191,14 +131,16 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Swing Dance Vegas</p>
         <div class="footer-links">
-          <a href="#events">Events</a>
-          <a href="#classes">Classes</a>
+          <a href="events.html">Events</a>
+          <a href="calendar.html">Calendar</a>
           <a href="code-of-conduct.html">Code of Conduct</a>
         </div>
       </div>
     </footer>
   </main>
 
-  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
